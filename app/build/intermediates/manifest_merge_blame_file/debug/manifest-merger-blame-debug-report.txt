@@ -1,0 +1,185 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.pedroflixapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="25"
+8-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:19.2.1] C:\Users\jpcae\.gradle\caches\transforms-3\da4c5d28e621fb39d52a583ac6380866\transformed\jetified-firebase-database-19.2.1\AndroidManifest.xml:25:5-79
+13-->[com.google.firebase:firebase-database:19.2.1] C:\Users\jpcae\.gradle\caches\transforms-3\da4c5d28e621fb39d52a583ac6380866\transformed\jetified-firebase-database-19.2.1\AndroidManifest.xml:25:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-database:19.2.1] C:\Users\jpcae\.gradle\caches\transforms-3\da4c5d28e621fb39d52a583ac6380866\transformed\jetified-firebase-database-19.2.1\AndroidManifest.xml:26:5-67
+14-->[com.google.firebase:firebase-database:19.2.1] C:\Users\jpcae\.gradle\caches\transforms-3\da4c5d28e621fb39d52a583ac6380866\transformed\jetified-firebase-database-19.2.1\AndroidManifest.xml:26:22-64
+15
+16    <application
+16-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:5:5-42:19
+17        android:allowBackup="true"
+17-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:6:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.7.0] C:\Users\jpcae\.gradle\caches\transforms-3\f3275e80ab154b41725df49b168bf81e\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:7:9-43
+22        android:label="@string/app_name"
+22-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:8:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:9:9-54
+24        android:supportsRtl="true"
+24-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:10:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.PedroflixApp" >
+26-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:11:9-50
+27        <activity
+27-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:12:9-14:39
+28            android:name="com.example.pedroflixapp.Listagem"
+28-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:13:13-37
+29            android:exported="true" />
+29-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:14:13-36
+30        <activity
+30-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:15:9-23:20
+31            android:name="com.example.pedroflixapp.RecuperarSenha"
+31-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:16:13-43
+32            android:exported="true" >
+32-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:17:13-36
+33            <intent-filter>
+33-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:18:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:19:17-69
+34-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:19:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:21:17-77
+36-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:24:9-32:20
+40            android:name="com.example.pedroflixapp.CriarUsuario"
+40-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:25:13-41
+41            android:exported="true" >
+41-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:26:13-36
+42            <intent-filter>
+42-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:18:13-22:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:19:17-69
+43-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:19:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:21:17-77
+45-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:21:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:33:9-41:20
+49            android:name="com.example.pedroflixapp.MainActivity"
+49-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:34:13-41
+50            android:exported="true" >
+50-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:35:13-36
+51            <intent-filter>
+51-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:18:13-22:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:19:17-69
+52-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:19:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:21:17-77
+54-->C:\Users\jpcae\caetano\android\pedroflix\app\src\main\AndroidManifest.xml:21:27-74
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+58            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+58-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+59            android:excludeFromRecents="true"
+59-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+60            android:exported="true"
+60-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+61            android:launchMode="singleTask"
+61-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+62            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+62-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+63-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+64
+65        <service
+65-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:19.3.0] C:\Users\jpcae\.gradle\caches\transforms-3\48467e5190c4aefd9c2c5b186d9ceb0f\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+68            android:exported="false" >
+68-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
+69            <meta-data
+69-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+70                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+70-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\jpcae\.gradle\caches\transforms-3\647c7a3367b687cad4b3388bba41e1cc\transformed\jetified-firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-database:19.2.1] C:\Users\jpcae\.gradle\caches\transforms-3\da4c5d28e621fb39d52a583ac6380866\transformed\jetified-firebase-database-19.2.1\AndroidManifest.xml:32:13-34:85
+73                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+73-->[com.google.firebase:firebase-database:19.2.1] C:\Users\jpcae\.gradle\caches\transforms-3\da4c5d28e621fb39d52a583ac6380866\transformed\jetified-firebase-database-19.2.1\AndroidManifest.xml:33:17-109
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-database:19.2.1] C:\Users\jpcae\.gradle\caches\transforms-3\da4c5d28e621fb39d52a583ac6380866\transformed\jetified-firebase-database-19.2.1\AndroidManifest.xml:34:17-82
+75        </service>
+76
+77        <activity
+77-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\jpcae\.gradle\caches\transforms-3\fcf52e5a5ae089d5666a4ca5232aed6a\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+78            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+78-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\jpcae\.gradle\caches\transforms-3\fcf52e5a5ae089d5666a4ca5232aed6a\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+79            android:exported="false"
+79-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\jpcae\.gradle\caches\transforms-3\fcf52e5a5ae089d5666a4ca5232aed6a\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+80            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+80-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\jpcae\.gradle\caches\transforms-3\fcf52e5a5ae089d5666a4ca5232aed6a\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+81
+82        <provider
+82-->[com.google.firebase:firebase-common:19.3.0] C:\Users\jpcae\.gradle\caches\transforms-3\48467e5190c4aefd9c2c5b186d9ceb0f\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+83            android:name="com.google.firebase.provider.FirebaseInitProvider"
+83-->[com.google.firebase:firebase-common:19.3.0] C:\Users\jpcae\.gradle\caches\transforms-3\48467e5190c4aefd9c2c5b186d9ceb0f\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+84            android:authorities="com.example.pedroflixapp.firebaseinitprovider"
+84-->[com.google.firebase:firebase-common:19.3.0] C:\Users\jpcae\.gradle\caches\transforms-3\48467e5190c4aefd9c2c5b186d9ceb0f\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+85            android:exported="false"
+85-->[com.google.firebase:firebase-common:19.3.0] C:\Users\jpcae\.gradle\caches\transforms-3\48467e5190c4aefd9c2c5b186d9ceb0f\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+86            android:initOrder="100" />
+86-->[com.google.firebase:firebase-common:19.3.0] C:\Users\jpcae\.gradle\caches\transforms-3\48467e5190c4aefd9c2c5b186d9ceb0f\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+87
+88        <meta-data
+88-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\e486c506327fa715bfa49ad4040c2f28\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+89            android:name="com.google.android.gms.version"
+89-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\e486c506327fa715bfa49ad4040c2f28\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+90            android:value="@integer/google_play_services_version" />
+90-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\e486c506327fa715bfa49ad4040c2f28\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+91
+92        <provider
+92-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\49e805865939035275a7bd209c8cd97a\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+93            android:name="androidx.startup.InitializationProvider"
+93-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\49e805865939035275a7bd209c8cd97a\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+94            android:authorities="com.example.pedroflixapp.androidx-startup"
+94-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\49e805865939035275a7bd209c8cd97a\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+95            android:exported="false" >
+95-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\49e805865939035275a7bd209c8cd97a\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+96            <meta-data
+96-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\49e805865939035275a7bd209c8cd97a\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+97                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+97-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\49e805865939035275a7bd209c8cd97a\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+98                android:value="androidx.startup" />
+98-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jpcae\.gradle\caches\transforms-3\49e805865939035275a7bd209c8cd97a\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+99            <meta-data
+99-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jpcae\.gradle\caches\transforms-3\d9604dcfe5e95cf7c167a38de6d0e62d\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+100                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+100-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jpcae\.gradle\caches\transforms-3\d9604dcfe5e95cf7c167a38de6d0e62d\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+101                android:value="androidx.startup" />
+101-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jpcae\.gradle\caches\transforms-3\d9604dcfe5e95cf7c167a38de6d0e62d\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+102        </provider>
+103    </application>
+104
+105</manifest>

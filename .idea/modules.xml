@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PedroflixApp.iml" filepath="$PROJECT_DIR$/.idea/modules/PedroflixApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PedroflixApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PedroflixApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PedroflixApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PedroflixApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PedroflixApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PedroflixApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PedroflixApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PedroflixApp.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

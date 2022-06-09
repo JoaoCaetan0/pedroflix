@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">245218500428-4l3usprgf8jeupvnsl4s2acul4knm2as.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">245218500428</string>
+    <string name="google_api_key" translatable="false">AIzaSyD4h1l4_NhdIPZ7AtN6dzCqLZdHQ6ryjkw</string>
+    <string name="google_app_id" translatable="false">1:245218500428:android:33dd70966029a39d7af9e9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD4h1l4_NhdIPZ7AtN6dzCqLZdHQ6ryjkw</string>
+    <string name="google_storage_bucket" translatable="false">pedroflixapp.appspot.com</string>
+    <string name="project_id" translatable="false">pedroflixapp</string>
+</resources>

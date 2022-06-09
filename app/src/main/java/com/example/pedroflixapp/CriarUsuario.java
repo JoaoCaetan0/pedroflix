@@ -16,7 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class CriarUsuario extends AppCompatActivity {
+public class CriarUsuario extends AppCompatActivity  {
     EditText edNome_, edEmail_, edSenha_;
     Button btCria;
 
@@ -25,6 +25,8 @@ public class CriarUsuario extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
+        setContentView(R.layout.activity_criar_usuario);
         edNome_  = findViewById(R.id.editCriaNome);
         edEmail_  = findViewById(R.id.editCrieEmail);
         edSenha_  = findViewById(R.id.editCriaSenha);

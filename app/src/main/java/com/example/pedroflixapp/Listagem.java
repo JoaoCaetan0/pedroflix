@@ -32,11 +32,6 @@ import java.util.ArrayList;
 
 public class Listagem extends AppCompatActivity {
 
-    TextView tvRecSenha, tvCriaUsuario;
-    Button btLogar;
-    ProgressBar progressBar;
-
-    FirebaseAuth mAuth;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
@@ -44,14 +39,13 @@ public class Listagem extends AppCompatActivity {
 
     ListView listView;
     ArrayAdapter<Filme> filmeArrayAdapter;
-    Intent i;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mAuth = FirebaseAuth.getInstance();
+        getSupportActionBar().hide();
+        setContentView(R.layout.activity_listagem);
 
 
         listView  = findViewById(R.id.listView1);
@@ -60,27 +54,31 @@ public class Listagem extends AppCompatActivity {
         Filme filme = new Filme();
         filme.setDuracao("3h");
         filme.setNome("Vingadores: Ultimato");
-        filme.setId(11);
+        filme.setId(1);
 
         Filme filme1 = new Filme();
         filme.setDuracao("3h");
         filme1.setNome("Vingadores: Guerra Infinita");
-        filme1.setId(11);
+        filme1.setId(2);
 
         Filme filme2 = new Filme();
         filme.setDuracao("3h");
         filme2.setNome("Vingadores: A era de Ultron");
-        filme2.setId(11);
+        filme2.setId(3);
 
         Filme filme3 = new Filme();
         filme.setDuracao("3h");
         filme3.setNome("Vingadores");
-        filme3.setId(11);
+        filme3.setId(4);
 
         //Inserir
         databaseReference.child("Filme").
                 child(filme.getNome()).
                 setValue(filme);
+
+        databaseReference.child("Filme").
+                child(filme1.getNome()).
+                setValue(filme1);
 
         databaseReference.child("Filme").
                 child(filme2.getNome()).
@@ -89,7 +87,6 @@ public class Listagem extends AppCompatActivity {
         databaseReference.child("Filme").
                 child(filme3.getNome()).
                 setValue(filme3);
-
 //        Listar:
         String palavra = "";
         pesquisarPalavra(palavra);
@@ -99,13 +96,13 @@ public class Listagem extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Filme p1 = filmeList.get(i);
+                Filme f1 = filmeList.get(i);
 
                 //se não limpar o array, não renderiza a lista corretamente
                 //ouvinte addValueEventListener repopula ele com add.
                 filmeList.clear();
 
-                databaseReference.child("Usuário").child(p1.getNome()).removeValue();
+                databaseReference.child("Filme").child(f1.getNome()).removeValue();
 
             }
         });
@@ -117,10 +114,10 @@ public class Listagem extends AppCompatActivity {
         Query query;
 
         if (palavra.equals("")) {
-            query = databaseReference.child("Usuário").orderByChild("nome");
+            query = databaseReference.child("Filme").orderByChild("nome");
         }
         else{
-            query = databaseReference.child("Usuário").orderByChild("nome").
+            query = databaseReference.child("Filme").orderByChild("nome").
                     startAt(palavra).endAt(palavra + "\uf8ff");
         }
         filmeList.clear();

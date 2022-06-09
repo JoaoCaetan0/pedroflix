@@ -24,6 +24,7 @@ public class RecuperarSenha extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_recuperar_senha);
 
         edRecSenha  = findViewById(R.id.editRecSenha);
