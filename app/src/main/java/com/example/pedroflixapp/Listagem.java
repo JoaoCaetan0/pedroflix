@@ -27,18 +27,21 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.ktx.Firebase;
 
 import java.util.ArrayList;
 
-public class Listagem extends AppCompatActivity {
+public class Listagem extends AppCompatActivity implements View.OnClickListener {
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
+    TextView tvAddFilme;
 
     ArrayList<Filme> filmeList = new ArrayList<>();
 
     ListView listView;
     ArrayAdapter<Filme> filmeArrayAdapter;
+    Intent i;
 
 
     @Override
@@ -48,7 +51,9 @@ public class Listagem extends AppCompatActivity {
         setContentView(R.layout.activity_listagem);
 
 
+        tvAddFilme = findViewById(R.id.textViewAdicionaFilme);
         listView  = findViewById(R.id.listView1);
+        tvAddFilme.setOnClickListener(this);
         iniciarFirebase();
 
         Filme filme = new Filme();
@@ -59,17 +64,17 @@ public class Listagem extends AppCompatActivity {
         Filme filme1 = new Filme();
         filme.setDuracao("3h");
         filme1.setNome("Vingadores: Guerra Infinita");
-        filme1.setId(2);
+        filme1.setId(1);
 
         Filme filme2 = new Filme();
         filme.setDuracao("3h");
         filme2.setNome("Vingadores: A era de Ultron");
-        filme2.setId(3);
+        filme2.setId(1);
 
         Filme filme3 = new Filme();
         filme.setDuracao("3h");
         filme3.setNome("Vingadores");
-        filme3.setId(4);
+        filme3.setId(1);
 
         //Inserir
         databaseReference.child("Filme").
@@ -107,6 +112,17 @@ public class Listagem extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.textViewAdicionaFilme:
+                i = new Intent(Listagem.this, CriarFilme.class);
+                startActivity(i);
+                break;
+
+        }
     }
 
 

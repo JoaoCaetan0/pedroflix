@@ -28,7 +28,7 @@ public class CriarUsuario extends AppCompatActivity  {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_criar_usuario);
         edNome_  = findViewById(R.id.editCriaNome);
-        edEmail_  = findViewById(R.id.editCrieEmail);
+        edEmail_  = findViewById(R.id.editCriaDuracao);
         edSenha_  = findViewById(R.id.editCriaSenha);
         btCria  = findViewById(R.id.buttonCria);
 

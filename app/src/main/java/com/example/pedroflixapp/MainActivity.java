@@ -2,15 +2,11 @@ package com.example.pedroflixapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,14 +20,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
-
-import android.os.Bundle;
 
 import java.util.ArrayList;
 
@@ -60,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         edEmail = findViewById(R.id.editTextEmail);
         edSenha = findViewById(R.id.editTextSenha);
-        tvCriaUsuario = findViewById(R.id.textViewCriaUsuario);
+        tvCriaUsuario = findViewById(R.id.textViewAdicionaFilme);
         tvRecSenha = findViewById(R.id.textViewEsqueciSenha);
         btLogar = findViewById(R.id.buttonLogin);
         progressBar = findViewById(R.id.progressBar);
@@ -85,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 i = new Intent(MainActivity.this, RecuperarSenha.class);
                 startActivity(i);
                 break;
-            case R.id.textViewCriaUsuario:
+            case R.id.textViewAdicionaFilme:
                 i = new Intent(MainActivity.this, CriarUsuario.class);
                 startActivity(i);
                 break;

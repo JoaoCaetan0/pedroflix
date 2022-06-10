@@ -88,7 +88,7 @@
         app:startIconDrawable="@drawable/ic_baseline_email_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editCrieEmail"
+            android:id="@+id/editCriaDuracao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="email"

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PedroflixApp">
         <activity
+            android:name=".CriarFilme"
+            android:exported="false" />
+        <activity
             android:name=".Listagem"
             android:exported="true" />
         <activity
